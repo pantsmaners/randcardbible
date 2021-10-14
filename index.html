@@ -2,6 +2,7 @@
 <head>
 <title>Test</title>
 <script type="text/javascript">
+
   function getImageTag() {
     var img = '<img src=\"';
     var randomIndex = Math.floor(Math.random() * 500)+1;
@@ -11,22 +12,9 @@
 </script>
 </head>
 <body>
-<script type="text/javascript">
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-  document.write(getImageTag());
-</script>
+<button onclick="document.getElementById('result').innerHTML+= getImageTag()">ADD A CARD!</button>
+
+<p id="result"></p>
+
 </body>
 </html>
